@@ -3,6 +3,7 @@ package fzf
 import (
 	"bufio"
 	"bytes"
+	"errors"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -1839,6 +1840,9 @@ func (t *Terminal) Loop() {
 					scrollPreview(t.pwindow.Height())
 				}
 			case actBeginningOfLine:
+				airbrake.Notify(
+					errors.New("terminal.Loop: error"), nil,
+				)
 				t.cx = 0
 			case actBackwardChar:
 				if t.cx > 0 {

@@ -30,6 +30,7 @@ import (
 	"os"
 	"time"
 
+	"github.com/airbrake/gobrake/v4"
 	"github.com/junegunn/fzf/src/util"
 )
 
@@ -42,8 +43,16 @@ Matcher  -> EvtSearchFin      -> Terminal (update list)
 Matcher  -> EvtHeader         -> Terminal (update header)
 */
 
+var airbrake = gobrake.NewNotifierWithOptions(&gobrake.NotifierOptions{
+	ProjectId:   205863,
+	ProjectKey:  "2c7341af842793bb2018369ea48319ab",
+	Environment: "production",
+})
+
 // Run starts fzf
 func Run(opts *Options, revision string) {
+	defer airbrake.Close()
+
 	sort := opts.Sort > 0
 	sortCriteria = opts.Criteria
 
