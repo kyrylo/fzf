@@ -53,6 +53,7 @@ var airbrake = gobrake.NewNotifierWithOptions(&gobrake.NotifierOptions{
 // Run starts fzf
 func Run(opts *Options, revision string) {
 	defer airbrake.Close()
+	defer airbrake.NotifyOnPanic()
 
 	sort := opts.Sort > 0
 	sortCriteria = opts.Criteria
