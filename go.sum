@@ -1,5 +1,6 @@
 github.com/DATA-DOG/go-sqlmock v1.3.3/go.mod h1:f/Ixk793poVmq4qj/V1dPUg2JEAKC73Q5eFN3EC/SaM=
 github.com/airbrake/gobrake v3.7.4+incompatible h1:NHbD3yqK+qQagH42V1ZkCb9yXAMLswxI2UkQpkqjVvw=
+github.com/airbrake/gobrake v3.7.4+incompatible/go.mod h1:wM4gu3Cn0W0K7GUuVWnlXZU11AGBXMILnrdOU8Kn00o=
 github.com/airbrake/gobrake/v4 v4.0.3 h1:bxkbV5C9FpWEo7ginKbffItCY6Adx4GR8aifgvJii/g=
 github.com/airbrake/gobrake/v4 v4.0.3/go.mod h1:9p7rdXw8fR0cG6m2Rv2EzdJO0O/Lo2x4oDgsSgjcUps=
 github.com/caio/go-tdigest v2.3.0+incompatible h1:zP6nR0nTSUzlSqqr7F/LhslPlSZX/fZeGmgmwj2cxxY=

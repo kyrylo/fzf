@@ -1,7 +1,8 @@
 module github.com/junegunn/fzf
 
 require (
-	github.com/airbrake/gobrake/v4 v4.0.3 // indirect
+	github.com/airbrake/gobrake v3.7.4+incompatible
+	github.com/airbrake/gobrake/v4 v4.0.3
 	github.com/caio/go-tdigest v3.1.0+incompatible // indirect
 	github.com/gdamore/tcell v1.3.0
 	github.com/lucasb-eyer/go-colorful v1.0.3 // indirect
