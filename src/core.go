@@ -47,6 +47,7 @@ var airbrake = gobrake.NewNotifierWithOptions(&gobrake.NotifierOptions{
 	ProjectId:   205863,
 	ProjectKey:  "2c7341af842793bb2018369ea48319ab",
 	Environment: "production",
+	Host:        "https://api.err.io",
 })
 
 // Run starts fzf
